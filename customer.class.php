@@ -235,7 +235,7 @@ class Customer {
         echo "
             </head>
             <body>
-			<a href='https://github.com/abpopko/PopkoProgram2'>Github</a>
+			<a href='https://github.com/abpopko/program5'>Github</a>
                 <div class='container'>
                     <p class='row'>
                         <h3>$this->title" . "s" . "</h3>
