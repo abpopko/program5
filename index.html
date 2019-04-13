@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		
+        <title>CRUD</title>
+		
+		 <script type="text/javascript" src="cordova.js"></script>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		 
+		<script>
+		$(function() {
+		var queryString=window.location.search;
+		if(queryString.length>0) {
+			queryString=queryString.substr(1);
+			}
+			var targetURL = "https://csis.svsu.edu/~abpopko/cis355/program5/customers.php";
+			$.get(targetURL, queryString, function(data) {
+				$('body').html(data);
+				});
+			});
+		</script>		
+    </head>
+    <body>
+       <!-- populated by ajax -->
+    </body>
+</html>
+
